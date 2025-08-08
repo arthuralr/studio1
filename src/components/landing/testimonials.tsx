@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "João S.",
     title: "Advogado",
-    avatar: "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW58ZW58MHx8fHwxNzU0NjI4MzUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW58ZW58MHx8fHwxNzU0NjI4MzUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "man lawyer",
     text: "A 1000leads mudou nosso jogo. O profissionalismo e a clareza nos relatórios nos deram a segurança que precisávamos. Os resultados em leads vieram rápido.",
   },
