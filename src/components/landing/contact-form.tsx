@@ -45,10 +45,14 @@ export default function ContactForm() {
     
     toast({
       title: "Formulário enviado!",
-      description: "Entraremos em contato em breve.",
+      description: "Redirecionando para o WhatsApp...",
     })
     
-    router.push("/thank-you");
+    const whatsappNumber = "555181672629";
+    const message = `Olá! Meu nome é ${values.name}. Acabei de me cadastrar no site da 1000leads e gostaria de agendar minha sessão estratégica. Meu email é ${values.email} e meu WhatsApp é ${values.whatsapp}.`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+    window.location.href = whatsappUrl;
   }
 
   return (
