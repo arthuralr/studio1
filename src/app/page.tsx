@@ -12,7 +12,7 @@ import Testimonials from '@/components/landing/testimonials';
 import Faq from '@/components/landing/faq';
 import Cta from '@/components/landing/cta';
 import Footer from '@/components/landing/footer';
-import Chatbot from '@/components/landing/chatbot';
+import WhatsAppButton from '@/components/landing/whatsapp-button';
 
 export default function Home() {
   return (
@@ -54,7 +54,7 @@ export default function Home() {
         </AnimatedSection>
       </main>
       <Footer />
-      <Chatbot />
+      <WhatsAppButton />
     </div>
   );
 }
