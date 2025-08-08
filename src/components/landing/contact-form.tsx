@@ -100,7 +100,7 @@ export default function ContactForm() {
               )}
             />
             <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-lg" disabled={isLoading}>
-              {isLoading ? 'Enviando...' : 'AGENDAR MINHA SESSÃO GRATUITA'}
+              {isLoading ? 'Enviando...' : 'Quero saber mais'}
             </Button>
           </form>
         </Form>
