@@ -8,7 +8,7 @@ const cases = [
     title: "Martins & Oliveira Advocacia - De Desconhecido a Referência Local",
     challenge: "Dificuldade em atrair clientes para serviços de alto valor, como planejamento societário.",
     solution: "Implementamos o Pacote Ecossistema de Crescimento, com foco em Google Ads para público qualificado e um chatbot para agendamento.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1576078855245-301a0bf949cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8YWR2b2dhZG98ZW58MHx8fHwxNzU0NjQ5NjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
     imageHint: "law office",
     results: [
       { icon: TrendingUp, text: "+300% em Leads Qualificados/mês" },
