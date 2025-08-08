@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const impulsePackage = {
   title: "Pacote Impulso Digital",
-  image: "https://placehold.co/600x400.png",
+  image: "https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzZXJ2aWNlfGVufDB8fHx8MTc1NDY0ODYzMXww&ixlib=rb-4.1.0&q=80&w=1080",
   imageHint: "digital marketing",
   description: "A base completa para sua empresa ser encontrada, gerar confiança e começar a atrair clientes online.",
   features: [
@@ -23,7 +23,7 @@ const impulsePackage = {
 
 const ecosystemPackage = {
   title: "Pacote Ecossistema de Crescimento",
-  image: "https://placehold.co/600x400.png",
+  image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGdyb3d0aHxlbnwwfHx8fDE3NTQ2NTI5NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
   imageHint: "business growth",
   description: "A solução definitiva para quem busca escalar, automatizar o atendimento e transformar clientes em uma máquina de indicações.",
   features: [
