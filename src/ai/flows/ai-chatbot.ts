@@ -25,6 +25,20 @@ const AIChatbotOutputSchema = z.object({
 });
 export type AIChatbotOutput = z.infer<typeof AIChatbotOutputSchema>;
 
+const askQualifyingQuestionTool = ai.defineTool(
+    {
+      name: 'askQualifyingQuestion',
+      description: 'Ask a qualifying question to the user to better understand their needs. Should be used when the user input is vague or does not provide enough information to determine their needs.',
+      inputSchema: z.object({
+        question: z.string().describe('The qualifying question to ask the user.'),
+      }),
+      outputSchema: z.string(),
+    },
+    async ({ question }) => {
+      return question;
+    }
+  );
+
 export async function aiChatbot(input: AIChatbotInput): Promise<AIChatbotOutput> {
   return aiChatbotFlow(input);
 }
@@ -33,6 +47,7 @@ const prompt = ai.definePrompt({
   name: 'aiChatbotPrompt',
   input: {schema: AIChatbotInputSchema},
   output: {schema: AIChatbotOutputSchema},
+  tools: [askQualifyingQuestionTool],
   prompt: `You are a chatbot designed to answer questions about 1000leads marketing agency and qualify leads.
 
   Your goal is to understand the user's needs and determine if they are a good fit for 1000leads services.
