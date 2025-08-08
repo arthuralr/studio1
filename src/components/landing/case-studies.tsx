@@ -14,7 +14,7 @@ const cases = [
     ],
   },
   {
-    title: "Consultoria XYZ - Automatizando para Escalar",
+    title: "Vector Growth - Automatizando para Escalar",
     challenge: "Perda de tempo com atendimento inicial e leads que não avançavam no funil.",
     solution: "Implementamos o Pacote Impulso Digital com a adição do Chatbot com IA para filtrar e qualificar os contatos.",
     results: [
