@@ -14,10 +14,10 @@ export default function ThankYouPage() {
         <div className="relative h-60 w-full mb-8 rounded-lg overflow-hidden">
             <Image 
                 src="https://placehold.co/800x400.png" 
-                alt="Celebration"
+                alt="Pessoa profissional feliz"
                 fill
                 className="object-cover"
-                data-ai-hint="celebration success"
+                data-ai-hint="professional person"
             />
         </div>
         <CheckCircle className="w-16 h-16 text-green-500 mb-6 mx-auto" />
