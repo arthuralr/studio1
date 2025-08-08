@@ -52,12 +52,12 @@ export default function ContactForm() {
     const message = `Olá! Meu nome é ${values.name}. Acabei de me cadastrar no site da 1000leads e gostaria de agendar minha sessão estratégica. Meu email é ${values.email} e meu WhatsApp é ${values.whatsapp}.`;
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     
-    window.location.href = whatsappUrl;
+    window.open(whatsappUrl, '_blank');
   }
 
   return (
-    <Card className="max-w-xl mx-auto shadow-lg">
-      <CardContent className="p-8">
+    <Card className="max-w-xl mx-auto shadow-none border-none">
+      <CardContent className="p-0 pt-4">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <FormField
@@ -106,7 +106,7 @@ export default function ContactForm() {
         </Form>
         <div className="mt-4 flex items-center justify-center text-sm text-muted-foreground">
           <Lock className="w-4 h-4 mr-2" />
-          <span>Suas informações estão seguras. Não enviamos spam.</span>
+          <span>Suas informações estão seguras.</span>
         </div>
       </CardContent>
     </Card>

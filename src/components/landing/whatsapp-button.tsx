@@ -1,8 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { MessageSquare } from "lucide-react";
-import Link from "next/link";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import ContactForm from "./contact-form";
 
 function WhatsAppIcon() {
     return (
@@ -23,22 +23,27 @@ function WhatsAppIcon() {
     )
 }
 
-
 export default function WhatsAppButton() {
-  const whatsappNumber = "555181672629";
-  const whatsappMessage = encodeURIComponent("Olá! Visitei o site e gostaria de mais informações.");
-
   return (
-    <div className="fixed bottom-6 right-6 z-50">
-      <Button
-        size="icon"
-        className="rounded-full w-16 h-16 bg-[#25D366] hover:bg-[#1DA851] text-white shadow-xl transform hover:scale-110 transition-transform duration-200"
-        asChild
-      >
-        <Link href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} target="_blank" aria-label="Fale conosco no WhatsApp">
-          <WhatsAppIcon />
-        </Link>
-      </Button>
-    </div>
+    <Dialog>
+        <DialogTrigger asChild>
+            <Button
+                size="icon"
+                className="fixed bottom-6 right-6 z-50 rounded-full w-16 h-16 bg-[#25D366] hover:bg-[#1DA851] text-white shadow-xl transform hover:scale-110 transition-transform duration-200"
+                aria-label="Fale conosco no WhatsApp"
+            >
+                <WhatsAppIcon />
+            </Button>
+        </DialogTrigger>
+        <DialogContent className="sm:max-w-[425px]">
+            <DialogHeader>
+                <DialogTitle>Fale com um especialista</DialogTitle>
+                <DialogDescription>
+                    Preencha seus dados abaixo para ser redirecionado ao nosso WhatsApp.
+                </DialogDescription>
+            </DialogHeader>
+            <ContactForm />
+        </DialogContent>
+    </Dialog>
   );
 }
