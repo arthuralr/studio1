@@ -13,7 +13,7 @@ const testimonials = [
   {
     name: "Ana P.",
     title: "Consultora",
-    avatar: "https://placehold.co/100x100.png",
+    avatar: "https://images.unsplash.com/photo-1588516903720-8ceb67f9ef84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdWxoZXJ8ZW58MHx8fHwxNzU0NjUwMDU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "woman consultant",
     text: "Finalmente encontrei uma agência que entende de tecnologia. O chatbot que eles criaram filtra os curiosos e me entrega apenas os clientes prontos para fechar. Recomendo demais!",
   },
