@@ -4,7 +4,7 @@ import { TrendingUp, Clock, Target, Users, ShoppingCart, BarChart } from "lucide
 
 const cases = [
   {
-    title: "Advocacia Exemplo - De Desconhecido a Referência Local",
+    title: "Martins & Oliveira Advocacia - De Desconhecido a Referência Local",
     challenge: "Dificuldade em atrair clientes para serviços de alto valor, como planejamento societário.",
     solution: "Implementamos o Pacote Ecossistema de Crescimento, com foco em Google Ads para público qualificado e um chatbot para agendamento.",
     results: [
