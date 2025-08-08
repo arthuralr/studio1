@@ -1,6 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { CheckCircle, MessageSquare } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ThankYouPage() {
   const whatsappMessage = encodeURIComponent("Olá! Acabei de me cadastrar no site da 1000leads e gostaria de agendar minha sessão estratégica.");
@@ -9,6 +11,15 @@ export default function ThankYouPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-secondary text-center p-6">
       <div className="bg-background p-8 md:p-12 rounded-2xl shadow-xl max-w-3xl w-full">
+        <div className="relative h-60 w-full mb-8 rounded-lg overflow-hidden">
+            <Image 
+                src="https://placehold.co/800x400.png" 
+                alt="Celebration"
+                fill
+                className="object-cover"
+                data-ai-hint="celebration success"
+            />
+        </div>
         <CheckCircle className="w-16 h-16 text-green-500 mb-6 mx-auto" />
         <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary mb-4">
           Obrigado! Seu primeiro passo foi dado.
