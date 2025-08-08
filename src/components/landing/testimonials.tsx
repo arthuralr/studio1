@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: "Carlos M.",
     title: "Diretor Comercial",
-    avatar: "https://placehold.co/100x100.png",
+    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyMHx8bWFufGVufDB8fHx8MTc1NDYyODM1MHww&ixlib=rb-4.1.0&q=80&w=1080",
     hint: "man director",
     text: "O melhor foi a ausência de contrato de fidelidade. Isso mostra que eles confiam no próprio trabalho. E com razão, os resultados falam por si.",
   },
