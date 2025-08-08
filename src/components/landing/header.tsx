@@ -27,7 +27,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-4">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}>
               <span className="text-sm font-medium hover:text-primary transition-colors">
@@ -35,6 +35,9 @@ export default function Header() {
               </span>
             </Link>
           ))}
+          <Link href="/schedule">
+             <Button variant="outline">Agendar Reunião</Button>
+          </Link>
           <a href="#contact">
             <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
               Quero Mais Clientes
@@ -68,6 +71,11 @@ export default function Header() {
                       </span>
                     </Link>
                   ))}
+                   <Link href="/schedule">
+                      <span onClick={() => setIsMenuOpen(false)} className="text-lg font-medium hover:text-primary transition-colors">
+                        Agendar Reunião
+                      </span>
+                    </Link>
                 </nav>
                  <a href="#contact" className="mt-auto">
                     <Button onClick={() => setIsMenuOpen(false)} size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
