@@ -32,7 +32,7 @@ const cases = [
     title: "Clínica Renovare - Agendas Cheias e Pacientes Satisfeitos",
     challenge: "Baixa visibilidade online e dificuldade para atrair novos pacientes para procedimentos estéticos.",
     solution: "Criamos uma página de captura otimizada e campanhas de Meta Ads segmentadas por interesse e localização.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbCVDMyVBRG5pY2F8ZW58MHx8fHwxNzU0NjQ5NjU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
     imageHint: "beauty clinic",
     results: [
         { icon: Users, text: "+50 Novos Pacientes no 1º Mês" },
