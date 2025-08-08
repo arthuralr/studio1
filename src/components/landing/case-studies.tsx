@@ -56,7 +56,7 @@ const cases = [
       title: "Alpha Engenharia - Conquistando Grandes Projetos B2B",
       challenge: "Dificuldade em alcançar decisores em grandes empresas e gerar propostas para projetos de alto valor.",
       solution: "Desenvolvemos uma estratégia de conteúdo no LinkedIn e Google Ads com foco em cargos e setores específicos (B2B).",
-      image: "https://placehold.co/600x400.png",
+      image: "https://images.unsplash.com/photo-1570470836811-78ef04bb23d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlbmdlbmhlaXJvfGVufDB8fHx8MTc1NDY0OTg2MXww&ixlib=rb-4.1.0&q=80&w=1080",
       imageHint: "engineering office",
       results: [
           { icon: TrendingUp, text: "Geração de 8 Oportunidades de Contratos B2B/mês" },
