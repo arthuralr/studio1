@@ -8,7 +8,7 @@ import { ExternalLink } from "lucide-react";
 const projects = [
   {
     title: "Paloma Martins",
-    description: "Site institucional e blog para advogada.",
+    description: "Página de venda para lançamento",
     imageUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8Z2lybHxlbnwwfHx8fDE3NTQ2NDg5OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     imageHint: "lawyer website",
     url: "http://palomartins.com.br",
