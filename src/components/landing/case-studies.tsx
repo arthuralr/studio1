@@ -44,7 +44,7 @@ const cases = [
       title: "Sofistiqué Boutique - E-commerce de Moda Decolando",
       challenge: "Carrinhos abandonados e dificuldade em transformar seguidores das redes sociais em clientes.",
       solution: "Aplicamos o Pacote Ecossistema de Crescimento, com foco em retargeting e e-mail marketing para recuperação de carrinho.",
-      image: "https://placehold.co/600x400.png",
+      image: "https://images.unsplash.com/photo-1586880244406-556ebe35f282?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8RS1jb21tZXJjZXxlbnwwfHx8fDE3NTQ2NDk3OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       imageHint: "fashion boutique",
       results: [
           { icon: ShoppingCart, text: "+120% de Aumento nas Vendas Online" },
