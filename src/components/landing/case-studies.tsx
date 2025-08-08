@@ -20,7 +20,7 @@ const cases = [
     title: "Vector Growth - Automatizando para Escalar",
     challenge: "Perda de tempo com atendimento inicial e leads que não avançavam no funil.",
     solution: "Implementamos o Pacote Impulso Digital com a adição do Chatbot com IA para filtrar e qualificar os contatos.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8bWFya2V0aW5nfGVufDB8fHx8MTc1NDU1NzAxOXww&ixlib=rb-4.1.0&q=80&w=1080",
     imageHint: "business consulting",
     results: [
       { icon: Clock, text: "8 horas/semana economizadas pela equipe" },
