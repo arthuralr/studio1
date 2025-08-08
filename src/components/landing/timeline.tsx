@@ -1,4 +1,4 @@
-import { FileText, UserCheck, BarChart, Package, Rocket, TrendingUp, Gem } from 'lucide-react';
+import { FileText, UserCheck, BarChart, Package, Rocket, TrendingUp, Gem, ArrowRight } from 'lucide-react';
 
 const timelineSteps = [
   {
@@ -50,35 +50,38 @@ export default function Timeline() {
             Veja como transformamos seu interesse inicial em resultados concretos.
           </p>
         </div>
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2 hidden md:block" aria-hidden="true"></div>
-
-          <div className="space-y-12 md:space-y-0">
-            {timelineSteps.map((step, index) => (
-              <div key={index} className="relative">
-                <div className="md:flex md:items-center md:justify-center">
-                  {/* Icon and Connector */}
-                  <div className={`flex items-center justify-center w-full md:w-auto ${index % 2 === 0 ? 'md:order-1' : 'md:order-3'}`}>
-                    <div className="flex-grow border-t-2 border-border md:hidden"></div>
-                    <div className="bg-primary text-primary-foreground p-4 rounded-full shadow-lg z-10">
-                      <step.icon className="w-8 h-8" />
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-12">
+            {timelineSteps.slice(0, 3).map((step, index) => (
+                <div key={index} className="flex flex-col items-center text-center">
+                    <div className="bg-primary text-primary-foreground p-4 rounded-full shadow-lg mb-4">
+                        <step.icon className="w-8 h-8" />
                     </div>
-                    <div className="flex-grow border-t-2 border-border md:hidden"></div>
-                  </div>
-                  
-                  {/* Spacer for desktop */}
-                  <div className={`hidden md:block w-1/4 ${index % 2 === 0 ? 'md:order-2' : 'md:order-2'}`}></div>
-                  
-                  {/* Content */}
-                  <div className={`w-full md:w-1/3 mt-6 md:mt-0 px-4 ${index % 2 === 0 ? 'md:order-3 text-left' : 'md:order-1 text-left md:text-right'}`}>
                     <h3 className="text-xl font-bold font-headline text-primary mb-2">{step.title}</h3>
-                    <p className="text-foreground/80">{step.description}</p>
-                  </div>
+                    <p className="text-foreground/80 flex-grow">{step.description}</p>
                 </div>
-              </div>
             ))}
-          </div>
+             <div className="hidden xl:flex flex-col items-center justify-center">
+                <ArrowRight className="w-12 h-12 text-primary/50" />
+            </div>
+        </div>
+        <div className="hidden lg:flex justify-center my-8">
+            <svg width="100%" height="40" viewBox="0 0 1200 40" className="text-primary/20">
+                <path d="M0 20 Q150 0 300 20 T600 20 T900 20 T1200 20" stroke="currentColor" strokeWidth="2" fill="none" strokeDasharray="10 5" />
+            </svg>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-12 mt-12 lg:mt-0">
+             <div className="hidden xl:flex flex-col items-center justify-center">
+                <ArrowRight className="w-12 h-12 text-primary/50 transform scale-x-[-1]" />
+            </div>
+            {timelineSteps.slice(3).map((step, index) => (
+                <div key={index} className={`flex flex-col items-center text-center ${index === 3 ? 'xl:col-start-2' : ''}`}>
+                    <div className="bg-primary text-primary-foreground p-4 rounded-full shadow-lg mb-4">
+                        <step.icon className="w-8 h-8" />
+                    </div>
+                    <h3 className="text-xl font-bold font-headline text-primary mb-2">{step.title}</h3>
+                    <p className="text-foreground/80 flex-grow">{step.description}</p>
+                </div>
+            ))}
         </div>
       </div>
     </section>
