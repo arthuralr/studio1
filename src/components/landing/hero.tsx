@@ -22,10 +22,11 @@ export default function Hero() {
             </a>
         </div>
         <div className="relative h-80 md:h-[450px] w-full rounded-lg overflow-hidden order-first md:order-last shadow-2xl">
-            <Image src="https://placehold.co/600x600.png" alt="Marketing digital" fill className="object-cover" data-ai-hint="digital marketing people" />
+            <Image src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8bWFya2V0aW5nfGVufDB8fHx8MTc1NDU1NzAxOXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Marketing digital" fill className="object-cover" data-ai-hint="digital marketing people" />
         </div>
       </div>
     </section>
   );
 }
+
 
