@@ -2,9 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
+import Image from "next/image";
 
 const impulsePackage = {
   title: "Pacote Impulso Digital",
+  image: "https://placehold.co/600x400.png",
+  imageHint: "digital marketing",
   description: "A base completa para sua empresa ser encontrada, gerar confiança e começar a atrair clientes online.",
   features: [
     "Site/Página de Captura Profissional",
@@ -20,6 +23,8 @@ const impulsePackage = {
 
 const ecosystemPackage = {
   title: "Pacote Ecossistema de Crescimento",
+  image: "https://placehold.co/600x400.png",
+  imageHint: "business growth",
   description: "A solução definitiva para quem busca escalar, automatizar o atendimento e transformar clientes em uma máquina de indicações.",
   features: [
     "TUDO do Pacote Impulso Digital",
@@ -44,12 +49,15 @@ export default function Solution() {
         </div>
         <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
           
-          <Card className="flex flex-col">
-            <CardHeader>
+          <Card className="flex flex-col overflow-hidden">
+            <CardHeader className="pb-4">
               <CardTitle className="font-headline text-2xl text-primary">{impulsePackage.title}</CardTitle>
               <CardDescription>{impulsePackage.description}</CardDescription>
             </CardHeader>
-            <CardContent className="flex-grow">
+            <CardContent className="flex-grow flex flex-col">
+              <div className="relative aspect-video rounded-md overflow-hidden mb-6">
+                 <Image src={impulsePackage.image} alt={impulsePackage.title} fill className="object-cover" data-ai-hint={impulsePackage.imageHint} />
+              </div>
               <ul className="space-y-3">
                 {impulsePackage.features.map((feature, index) => (
                   <li key={index} className="flex items-start">
@@ -59,20 +67,23 @@ export default function Solution() {
                 ))}
               </ul>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="mt-auto">
                 <Button variant="outline" size="lg" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                     <a href="#contact">{impulsePackage.cta}</a>
                 </Button>
             </CardFooter>
           </Card>
 
-          <Card className="flex flex-col border-2 border-primary relative shadow-2xl">
-            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary">MAIS POPULAR</Badge>
-            <CardHeader>
+          <Card className="flex flex-col border-2 border-primary relative shadow-2xl overflow-hidden">
+            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary z-10">MAIS POPULAR</Badge>
+            <CardHeader className="pb-4">
               <CardTitle className="font-headline text-2xl text-primary">{ecosystemPackage.title}</CardTitle>
               <CardDescription>{ecosystemPackage.description}</CardDescription>
             </CardHeader>
-            <CardContent className="flex-grow">
+            <CardContent className="flex-grow flex flex-col">
+                <div className="relative aspect-video rounded-md overflow-hidden mb-6">
+                    <Image src={ecosystemPackage.image} alt={ecosystemPackage.title} fill className="object-cover" data-ai-hint={ecosystemPackage.imageHint} />
+                </div>
               <ul className="space-y-3">
                 {ecosystemPackage.features.map((feature, index) => (
                   <li key={index} className="flex items-start">
@@ -82,7 +93,7 @@ export default function Solution() {
                 ))}
               </ul>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="mt-auto">
                 <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
                     <a href="#contact">{ecosystemPackage.cta}</a>
                 </Button>
