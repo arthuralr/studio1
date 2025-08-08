@@ -10,7 +10,7 @@ export default function Footer() {
             <Link href="https://www.facebook.com/share/1Bqgd4skD8/" target="_blank" aria-label="Facebook">
                 <Facebook className="h-6 w-6 text-primary-foreground hover:opacity-80 transition-opacity" />
             </Link>
-            <Link href="https://www.instagram.com/gtiweb/" target="_blank" aria-label="Instagram">
+            <Link href="https://www.instagram.com/1000leadsagenciamkt/" target="_blank" aria-label="Instagram">
                 <Instagram className="h-6 w-6 text-primary-foreground hover:opacity-80 transition-opacity" />
             </Link>
         </div>
