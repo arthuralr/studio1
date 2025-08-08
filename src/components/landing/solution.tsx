@@ -74,7 +74,7 @@ export default function Solution() {
             </CardFooter>
           </Card>
 
-          <Card className="flex flex-col border-2 border-primary relative shadow-2xl overflow-hidden">
+          <Card className="flex flex-col border-2 border-primary relative shadow-2xl">
             <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary z-10">MAIS POPULAR</Badge>
             <CardHeader className="pb-4">
               <CardTitle className="font-headline text-2xl text-primary">{ecosystemPackage.title}</CardTitle>
