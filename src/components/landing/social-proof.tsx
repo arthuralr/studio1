@@ -72,7 +72,7 @@ export default function SocialProof() {
     <section id="social-proof" className="py-16 bg-background">
       <div className="container mx-auto px-6">
         <h3 className="text-center text-lg font-medium text-foreground/70 mb-8 font-headline">
-          Empresas que confiam na nossa estratégia:
+          Adcione imagens de logotipos abaixo
         </h3>
         <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 md:gap-x-16">
           {logos.map((logo) => {
