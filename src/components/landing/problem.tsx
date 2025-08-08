@@ -35,13 +35,13 @@ export default function Problem() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {problems.map((problem, index) => (
-            <Card key={index} className="text-center bg-background">
+            <Card key={index} className="text-center bg-background flex flex-col">
               <CardHeader>
                 <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
                     <problem.icon className="w-8 h-8" />
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <CardTitle className="mb-2 font-headline text-lg">{problem.title}</CardTitle>
                 <p className="text-foreground/80">{problem.text}</p>
               </CardContent>

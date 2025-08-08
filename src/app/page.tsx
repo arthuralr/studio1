@@ -1,3 +1,4 @@
+import AnimatedSection from '@/components/landing/animated-section';
 import Header from '@/components/landing/header';
 import Hero from '@/components/landing/hero';
 import SocialProof from '@/components/landing/social-proof';
@@ -15,14 +16,30 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-grow">
-        <Hero />
-        <SocialProof />
-        <Problem />
-        <Solution />
-        <CaseStudies />
-        <Testimonials />
-        <Faq />
-        <Cta />
+        <AnimatedSection>
+            <Hero />
+        </AnimatedSection>
+        <AnimatedSection>
+            <SocialProof />
+        </AnimatedSection>
+        <AnimatedSection>
+            <Problem />
+        </AnimatedSection>
+        <AnimatedSection>
+            <Solution />
+        </AnimatedSection>
+        <AnimatedSection>
+            <CaseStudies />
+        </AnimatedSection>
+        <AnimatedSection>
+            <Testimonials />
+        </AnimatedSection>
+        <AnimatedSection>
+            <Faq />
+        </AnimatedSection>
+        <AnimatedSection>
+            <Cta />
+        </AnimatedSection>
       </main>
       <Footer />
       <Chatbot />
