@@ -6,6 +6,7 @@ import Problem from '@/components/landing/problem';
 import Solution from '@/components/landing/solution';
 import Timeline from '@/components/landing/timeline';
 import Features from '@/components/landing/features';
+import Portfolio from '@/components/landing/portfolio';
 import CaseStudies from '@/components/landing/case-studies';
 import Testimonials from '@/components/landing/testimonials';
 import Faq from '@/components/landing/faq';
@@ -35,6 +36,9 @@ export default function Home() {
         </AnimatedSection>
         <AnimatedSection>
             <Features />
+        </AnimatedSection>
+        <AnimatedSection>
+            <Portfolio />
         </AnimatedSection>
         <AnimatedSection>
             <CaseStudies />
