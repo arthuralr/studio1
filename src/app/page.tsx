@@ -54,11 +54,11 @@ export default function Home() {
         <div className="container mx-auto px-6">
             <div className="relative w-full h-48 md:h-64 rounded-lg overflow-hidden">
                 <Image 
-                    src="https://placehold.co/1200x400.png" 
+                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFtfGVufDB8fHx8MTc1NDY1NDMxMXww&ixlib=rb-4.1.0&q=80&w=1080" 
                     alt="Imagem horizontal de garantia"
                     fill
                     className="object-cover"
-                    data-ai-hint="guarantee seal"
+                    data-ai-hint="business team"
                 />
             </div>
         </div>
