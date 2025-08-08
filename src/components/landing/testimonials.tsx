@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const testimonials = [
   {
-    name: "Lucas X.",
+    name: "João S.",
     title: "Advogado",
     avatar: "https://placehold.co/100x100.png",
     hint: "man lawyer",
