@@ -12,6 +12,7 @@ import Faq from '@/components/landing/faq';
 import Cta from '@/components/landing/cta';
 import Footer from '@/components/landing/footer';
 import WhatsAppButton from '@/components/landing/whatsapp-button';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -49,6 +50,19 @@ export default function Home() {
             <Cta />
         </AnimatedSection>
       </main>
+      <section className="py-12 bg-secondary">
+        <div className="container mx-auto px-6">
+            <div className="relative w-full h-48 md:h-64 rounded-lg overflow-hidden">
+                <Image 
+                    src="https://placehold.co/1200x400.png" 
+                    alt="Imagem horizontal de garantia"
+                    fill
+                    className="object-cover"
+                    data-ai-hint="guarantee seal"
+                />
+            </div>
+        </div>
+      </section>
       <Footer />
       <WhatsAppButton />
     </div>
