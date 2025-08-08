@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Filter Instalações",
     description: "Site para empresa de instalações comerciais.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "https://images.unsplash.com/photo-1646640381839-02748ae8ddf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNHx8aW5zdGFsYXRpb25zfGVufDB8fHx8MTc1NDY0OTI0OHww&ixlib=rb-4.1.0&q=80&w=1080",
     imageHint: "commercial installations",
     url: "https://filterinstalacoes.com.br/",
   },
