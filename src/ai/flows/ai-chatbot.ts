@@ -10,6 +10,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
+import {MessageData, Part} from 'genkit';
 
 const AIChatbotInputSchema = z.object({
   userInput: z.string().describe('The user input message.'),
@@ -66,15 +67,12 @@ const prompt = ai.definePrompt({
   - What is your budget for marketing?
   - What are your goals for online marketing?
 
-  Past messages:
+  Conversation History:
   {{#each pastMessages}}
-  {{#if (eq this.role "user")}}User: {{this.content}}{{/if}}
-  {{#if (eq this.role "assistant")}}Assistant: {{this.content}}{{/if}}
+    {{role}}: {{content}}
   {{/each}}
-
-  User input: {{userInput}}
-
-  Chatbot response:`, // MUST be last line in prompt for proper auto-formatting
+  
+  Current User Input: {{userInput}}`,
 });
 
 const aiChatbotFlow = ai.defineFlow(
@@ -83,8 +81,19 @@ const aiChatbotFlow = ai.defineFlow(
     inputSchema: AIChatbotInputSchema,
     outputSchema: AIChatbotOutputSchema,
   },
-  async input => {
-    const {output} = await prompt(input);
+  async (input) => {
+    const history: MessageData[] = (input.pastMessages || []).map((msg) => ({
+      role: msg.role === 'assistant' ? 'model' : 'user',
+      content: [{ text: msg.content }],
+    }));
+
+    const { output } = await prompt(
+      {
+        userInput: input.userInput,
+        pastMessages: input.pastMessages
+      },
+      { history }
+    );
     return output!;
   }
 );
