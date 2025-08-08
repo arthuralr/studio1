@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: "Cellphone BH",
-    description: "E-commerce para loja de celulares e acessórios.",
+    description: "Conserto e manutenção de celulares",
     imageUrl: "https://images.unsplash.com/photo-1529653762956-b0a27278529c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwaG9uZXxlbnwwfHx8fDE3NTQ1OTkxOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
     imageHint: "cellphone store",
     url: "https://cellphonebh.com.br/",
