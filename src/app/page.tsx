@@ -1,7 +1,6 @@
 import AnimatedSection from '@/components/landing/animated-section';
 import Header from '@/components/landing/header';
 import Hero from '@/components/landing/hero';
-import SocialProof from '@/components/landing/social-proof';
 import Problem from '@/components/landing/problem';
 import Solution from '@/components/landing/solution';
 import Timeline from '@/components/landing/timeline';
@@ -21,9 +20,6 @@ export default function Home() {
       <main className="flex-grow">
         <AnimatedSection>
             <Hero />
-        </AnimatedSection>
-        <AnimatedSection>
-            <SocialProof />
         </AnimatedSection>
         <AnimatedSection>
             <Problem />
