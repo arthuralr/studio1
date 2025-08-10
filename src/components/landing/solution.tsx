@@ -36,6 +36,8 @@ const ecosystemPackage = {
     "Pacote de 8 postagens para as Redes Sociais",
     "Sistema de Assinatura Eletrônica",
   ],
+  price: "R$499,00",
+  pricePeriod: "/mês",
   cta: "QUERO O PACOTE COMPLETO",
 };
 
@@ -51,6 +53,8 @@ const completePackage = {
     "Programa de Indicações Estratégico",
     "Campanhas de E-mail Marketing",
   ],
+  price: "R$999,00",
+  pricePeriod: "/mês",
   cta: "QUERO O PACOTE COMPLETO",
 };
 
@@ -113,10 +117,14 @@ export default function Solution() {
                 ))}
               </ul>
             </CardContent>
-            <CardFooter className="mt-auto">
-                <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                    <a href="#contact">{ecosystemPackage.cta}</a>
-                </Button>
+            <CardFooter className="mt-auto flex-col items-start gap-4">
+              <div className="text-center w-full">
+                <p className="text-4xl font-bold text-primary">{ecosystemPackage.price}</p>
+                <p className="text-muted-foreground">{ecosystemPackage.pricePeriod}</p>
+              </div>
+              <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                  <a href="#contact">{ecosystemPackage.cta}</a>
+              </Button>
             </CardFooter>
           </Card>
 
@@ -138,10 +146,14 @@ export default function Solution() {
                 ))}
               </ul>
             </CardContent>
-            <CardFooter className="mt-auto">
-                <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                    <a href="#contact">{completePackage.cta}</a>
-                </Button>
+            <CardFooter className="mt-auto flex-col items-start gap-4">
+              <div className="text-center w-full">
+                  <p className="text-4xl font-bold text-primary">{completePackage.price}</p>
+                  <p className="text-muted-foreground">{completePackage.pricePeriod}</p>
+              </div>
+              <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <a href="#contact">{completePackage.cta}</a>
+              </Button>
             </CardFooter>
           </Card>
 
