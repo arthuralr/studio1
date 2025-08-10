@@ -55,7 +55,7 @@ const completePackage = {
   ],
   price: "R$999,00",
   pricePeriod: "/mês",
-  cta: "QUERO O PACOTE COMPLETO",
+  cta: "QUERO UMA AMOSTRA GRÁTIS",
 };
 
 export default function Solution() {
