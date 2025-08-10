@@ -27,6 +27,7 @@ const ecosystemPackage = {
   imageHint: "business growth",
   description: "A solução definitiva para quem busca escalar, automatizar o atendimento e transformar clientes em uma máquina de indicações.",
   features: [
+    "Tudo do pacote Starter +",
     "Trafego pago 3 campanhas por mes",
     "Link da BIO (microsite)",
     "Página de captura",
