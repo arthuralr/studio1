@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 import Image from "next/image";
 
 const impulsePackage = {
-  title: "Pacote Impulso Digital",
+  title: "Pacote Starter",
   image: "https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzZXJ2aWNlfGVufDB8fHx8MTc1NDY0ODYzMXww&ixlib=rb-4.1.0&q=80&w=1080",
   imageHint: "digital marketing",
   description: "O essencial para iniciar sua presença digital e capturar os primeiros leads de forma eficiente.",
@@ -25,7 +25,7 @@ const ecosystemPackage = {
   imageHint: "business growth",
   description: "A solução definitiva para quem busca escalar, automatizar o atendimento e transformar clientes em uma máquina de indicações.",
   features: [
-    "TUDO do Pacote Impulso Digital",
+    "TUDO do Pacote Starter",
     "Chatbot com IA para Atendimento 24/7",
     "Agente de IA Personalizado",
     "Programa de Indicações Estratégico",
