@@ -49,11 +49,10 @@ const completePackage = {
   description: "Tudo que o seu negócio precisa para dominar o mercado, com automação avançada e inteligência de dados.",
   features: [
     "Tudo do Pacote Essencial",
-    "Gestão de Mídias Sociais Completa",
-    "Produção de Conteúdo para Blog (SEO)",
-    "Automação de Marketing Avançada",
-    "Dashboard de BI em Tempo Real",
-    "Suporte Prioritário",
+    "Chatbot com IA para Atendimento 24/7",
+    "Agente de IA Personalizado",
+    "Programa de Indicações Estratégico",
+    "Campanhas de E-mail Marketing",
   ],
   cta: "QUERO O PACOTE COMPLETO",
 };
