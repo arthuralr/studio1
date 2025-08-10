@@ -14,7 +14,7 @@ const impulsePackage = {
     "4 Postagens Estratégicas",
     "Link da Bio (Micro Site)",
     "Página de Captura",
-    "Implementação de CRM",
+    "CRM para gerenciamento de clientes e oportunidades",
   ],
   price: "R$299,00",
   pricePeriod: "/mês",
