@@ -18,7 +18,7 @@ const impulsePackage = {
   ],
   price: "R$299,00",
   pricePeriod: "/mês",
-  cta: "QUERO ESTE PACOTE",
+  cta: "Quero uma Amostra GRÁTIS",
 };
 
 const ecosystemPackage = {
