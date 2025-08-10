@@ -48,7 +48,7 @@ const completePackage = {
   imageHint: "business professional",
   description: "Tudo que o seu negócio precisa para dominar o mercado, com automação avançada e inteligência de dados.",
   features: [
-    "Tudo do Pacote Essencial",
+    "Tudo do Pacote Essencial +",
     "Chatbot com IA para Atendimento 24/7",
     "Agente de IA Personalizado",
     "Programa de Indicações Estratégico",
