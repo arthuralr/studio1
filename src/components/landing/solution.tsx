@@ -35,7 +35,6 @@ const ecosystemPackage = {
     "E-mail marketing",
     "Chatbot web",
     "Chatbot whatsapp",
-    "CRM",
     "Sistema de indicação de leads",
     "Ferramenta de Analytics (Análise de Dados)",
     "Pacote de 8 postagens para as Redes Sociais",
