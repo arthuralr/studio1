@@ -31,6 +31,7 @@ const ecosystemPackage = {
     "Trafego pago 3 campanhas por mes",
     "Link da BIO (microsite)",
     "Página de captura",
+    "CRM para gerenciamento",
     "E-mail marketing",
     "Chatbot web",
     "Chatbot whatsapp",
