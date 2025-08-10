@@ -42,6 +42,22 @@ const ecosystemPackage = {
   cta: "QUERO O PACOTE COMPLETO",
 };
 
+const completePackage = {
+  title: "Pacote Completo",
+  image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NTQ2NTI5OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+  imageHint: "business professional",
+  description: "Tudo que o seu negócio precisa para dominar o mercado, com automação avançada e inteligência de dados.",
+  features: [
+    "Tudo do Pacote Essencial",
+    "Gestão de Mídias Sociais Completa",
+    "Produção de Conteúdo para Blog (SEO)",
+    "Automação de Marketing Avançada",
+    "Dashboard de BI em Tempo Real",
+    "Suporte Prioritário",
+  ],
+  cta: "QUERO O PACOTE COMPLETO",
+};
+
 export default function Solution() {
   return (
     <section id="packages" className="py-20 bg-background">
@@ -51,7 +67,7 @@ export default function Solution() {
                 Nossos Planos de Ação para o seu Crescimento
             </h2>
         </div>
-        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
+        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
           
           <Card className="flex flex-col overflow-hidden">
             <CardHeader className="pb-4">
@@ -104,6 +120,31 @@ export default function Solution() {
             <CardFooter className="mt-auto">
                 <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
                     <a href="#contact">{ecosystemPackage.cta}</a>
+                </Button>
+            </CardFooter>
+          </Card>
+
+          <Card className="flex flex-col overflow-hidden">
+            <CardHeader className="pb-4">
+              <CardTitle className="font-headline text-2xl text-primary">{completePackage.title}</CardTitle>
+              <CardDescription>{completePackage.description}</CardDescription>
+            </CardHeader>
+            <CardContent className="flex-grow flex flex-col">
+              <div className="relative aspect-video rounded-md overflow-hidden mb-6">
+                 <Image src={completePackage.image} alt={completePackage.title} fill className="object-cover" data-ai-hint={completePackage.imageHint} />
+              </div>
+              <ul className="space-y-3">
+                {completePackage.features.map((feature, index) => (
+                  <li key={index} className="flex items-start">
+                    <Check className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                    <span className={index === 0 ? "font-bold" : ""}>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+            <CardFooter className="mt-auto">
+                <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                    <a href="#contact">{completePackage.cta}</a>
                 </Button>
             </CardFooter>
           </Card>
