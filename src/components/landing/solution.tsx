@@ -16,6 +16,8 @@ const impulsePackage = {
     "Página de Captura",
     "Implementação de CRM",
   ],
+  price: "R$299,00",
+  pricePeriod: "/mês",
   cta: "QUERO ESTE PACOTE",
 };
 
@@ -65,7 +67,11 @@ export default function Solution() {
                 ))}
               </ul>
             </CardContent>
-            <CardFooter className="mt-auto">
+            <CardFooter className="mt-auto flex-col items-start gap-4">
+                <div className="text-center w-full">
+                    <p className="text-4xl font-bold text-primary">{impulsePackage.price}</p>
+                    <p className="text-muted-foreground">{impulsePackage.pricePeriod}</p>
+                </div>
                 <Button variant="outline" size="lg" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                     <a href="#contact">{impulsePackage.cta}</a>
                 </Button>
