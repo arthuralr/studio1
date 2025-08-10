@@ -22,7 +22,7 @@ const impulsePackage = {
 };
 
 const ecosystemPackage = {
-  title: "Pacote Ecossistema de Crescimento",
+  title: "Pacote Essencial",
   image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGdyb3d0aHxlbnwwfHx8fDE3NTQ2NTI5NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
   imageHint: "business growth",
   description: "A solução definitiva para quem busca escalar, automatizar o atendimento e transformar clientes em uma máquina de indicações.",
