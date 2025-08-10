@@ -28,7 +28,6 @@ const ecosystemPackage = {
   description: "A solução definitiva para quem busca escalar, automatizar o atendimento e transformar clientes em uma máquina de indicações.",
   features: [
     "Tudo do pacote Starter +",
-    "CRM para gerenciamento",
     "E-mail marketing",
     "Chatbot web",
     "Chatbot whatsapp",
